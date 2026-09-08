@@ -704,11 +704,6 @@ Before submitting changes:
 
 ---
 
-# License
-
-This project is released under the license specified in `LICENSE`.
-
----
 
 # Author
 
