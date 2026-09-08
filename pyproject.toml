@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reconpilot"
+version = "0.1.0"
+description = "Modular reconnaissance toolkit for authorized security assessments and cybersecurity laboratories."
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "typer",
+    "rich",
+    "PyYAML",
+    "dnspython",
+    "httpx",
+    "Jinja2",
+]
+
+[project.scripts]
+reconpilot = "reconpilot.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["reconpilot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
